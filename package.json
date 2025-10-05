@@ -69,5 +69,8 @@
             "preview": "vite preview",
             "test": "vitest",
             "test:ci": "vitest --run --coverage"
-      }
+      },
+      "engines": {
+            "node": "18.x"
+  }
 }
