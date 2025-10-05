@@ -1,7 +1,9 @@
+import React from 'react';
 import { render, screen } from '@testing-library/react';
 import SupabaseStatusBanner from '../SupabaseStatusBanner';
 import * as supabaseService from '../../services/supabaseService';
 import { describe, it, expect, vi, type Mock } from 'vitest';
+import '@testing-library/jest-dom';
 
 vi.mock('../../services/supabaseService', async () => ({
   checkSupabaseStatus: vi.fn()
