@@ -1,4 +1,4 @@
-import logoImage from 'figma:asset/6774daf17ccef97bebb1bd19b41e6c57f42afb54.png';
+import logoImage from '../assets/6774daf17ccef97bebb1bd19b41e6c57f42afb54.png';
 
 interface WebLogoProps {
   className?: string;

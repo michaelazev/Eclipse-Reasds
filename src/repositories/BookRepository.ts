@@ -8,9 +8,9 @@ import {
   getBooksByCategory as getGoogleBooksByCategory
 } from '../services/booksService.js';
 
-// Import book cover images
-import iracemaCover from 'figma:asset/b8075dd3c0bcd3945b8988411ecaf7f61e65580d.png';
-import autoCompadecidaCover from 'figma:asset/391ecbf14868c49fbfdc5c7df4cde3474f0b149b.png';
+// Placeholder URLs for book cover images
+const iracemaCover = 'https://images.unsplash.com/photo-1532012197267-da84d127e765?w=300&h=400&fit=crop';
+const autoCompadecidaCover = 'https://images.unsplash.com/photo-1495446815901-a7297e633e8d?w=300&h=400&fit=crop';
 
 export interface BookRepository {
   getAllBooks(): Promise<Book[]>;

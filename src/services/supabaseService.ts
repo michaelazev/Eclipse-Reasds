@@ -9,8 +9,8 @@ let supabaseClient: SupabaseClient | null = null;
 // Function to get environment variables from multiple sources
 function getEnvVar(name: string): string {
   // Try import.meta.env first (Vite)
-  if (typeof import.meta !== 'undefined' && import.meta.env && (import.meta.env as any)[name]) {
-    return (import.meta.env as any)[name] as string;
+  if (typeof import.meta !== 'undefined' && (import.meta as any).env && ((import.meta as any).env)[name]) {
+    return ((import.meta as any).env)[name] as string;
   }
   
   // Try process.env (Node.js)
