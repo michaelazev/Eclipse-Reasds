@@ -68,7 +68,7 @@
     },
     "scripts": {
         "dev": "vite",
-        "build": "node ./node_modules/vite/bin/vite.js build",
+        "build": "ROLLUP_SKIP_DIR_CHECK=1 node ./node_modules/vite/bin/vite.js build",
         "preview": "vite preview",
         "test": "vitest",
         "test:ci": "vitest --run"
