@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { motion, AnimatePresence } from "motion/react";
+import { motion, AnimatePresence } from "framer-motion";
 import { AppProvider, useApp } from "./contexts/AppContext";
 import { AuthScreen } from "./components/AuthScreen";
 import { HomeScreen } from "./components/screens/HomeScreen";

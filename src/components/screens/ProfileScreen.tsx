@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { motion } from 'motion/react';
+import { motion } from 'framer-motion';
 import { useApp } from '../../contexts/AppContext';
 import { ReadingSettings } from '../ReadingSettings';
 import { Card, CardContent } from '../ui/card';

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
 import { WebLogo } from "./WebLogo";
 import { useIsDesktop } from "../hooks/useMediaQuery";
 import { toast } from "sonner";
