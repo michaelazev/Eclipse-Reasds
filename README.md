@@ -1,7 +1,5 @@
 # Eclipse Reads
 
-Projeto de leitura e organização de livros.
-
 ## Sobre
 
 O *Eclipse Reads* é um aplicativo / web app para organizar leituras, gerenciar a biblioteca pessoal de livros e acompanhar o progresso de leitura. O repositório contém o frontend da aplicação (TypeScript + React) e arquivos de suporte para integração com serviços como Supabase.
@@ -14,20 +12,19 @@ Algumas funcionalidades esperadas ou já implementadas (verificar o código para
 - Integração com Supabase para persistência/SSR
 - Componentes de UI reutilizáveis (Radix, ícones, controles)
 
-> Observação: adapte as seções de Features e Uso conforme novas implementações.
-
 ## Tecnologias / Stack
 
 Baseado nas dependências e arquivos de configuração do repositório:
 
 - TypeScript
 - React 18
-- Vite (bundler / dev server)
-- Supabase (cliente: @supabase/supabase-js e pastas/arquivos supabase / supabase-*.sql)
-- Radix UI (muitos pacotes @radix-ui/*)
+- Vite
+- Supabase 
+- Radix UI 
 - Hono (presente como dependência; possivelmente usado em funções/rotas serverless)
 - Vitest e Testing Library (testes)
-- CSS (há src/index.css / styles/globals.css); não foi encontrada dependência explícita do tailwindcss nas dependências, porém há utilitários como tailwind-merge — verifique se o projeto usa Tailwind ou apenas classes utilitárias)
+- CSS
+- Tailwindcss;
 
 Arquivos de configuração presentes:
 
@@ -35,26 +32,6 @@ Arquivos de configuração presentes:
 - vite.config.ts
 - vitest.config.ts
 - vercel.json
-
-Repare que o package.json define Node 20.x como engine.
-
-## Estrutura (visão geral)
-
-Principais pastas e arquivos no repositório:
-
-
-.
-├── src/                      # código-fonte da aplicação (components, screens, styles, supabase, etc)
-├── build/                    # saída de build gerada (quando presente)
-├── index.html
-├── package.json
-├── tsconfig.json
-├── vite.config.ts
-├── vitest.config.ts
-└── README.md
-
-
-No src/ há subpastas relevantes como components/, services/, supabase/ e arquivos SQL de schema (supabase-schema.sql, supabase-complete-schema.sql).
 
 ## Requisitos
 
@@ -79,17 +56,6 @@ npm install
 3. Configure variáveis de ambiente:
 
 - Crie um arquivo .env na raiz com as variáveis necessárias. A base do projeto usa nomes de variáveis com prefixo VITE_ (variáveis expostas ao cliente) — alguns exemplos encontrados no repositório:
-
-
-# Exemplo (NUNCA comite valores reais em repositórios públicos)
-VITE_APP_SUPABASE_URL=
-VITE_APP_SUPABASE_ANON_KEY=
-VITE_GOOGLE_BOOKS_API_KEY=
-
-
-- Procure por arquivos em src/ (por exemplo src/services/supabaseService.ts) para confirmar outros nomes de variáveis usadas internamente.
-
-- IMPORTANTE: nunca comite o arquivo .env com valores reais (chaves/segredos). Use .gitignore para garantir que .env não seja versionado e configure as variáveis no provedor de hospedagem (Vercel, Netlify, etc.).
 
 4. Rodar em modo desenvolvimento:
 
@@ -138,11 +104,8 @@ Se for usar Supabase localmente/produzindo, crie as variáveis de ambiente adequ
 
 ## Deploy
 
-Este repositório inclui vercel.json e está apto para deploy em plataformas como Vercel. Etapas gerais:
-
-1. Build: npm run build
-2. Configurar variáveis de ambiente no provedor de hospedagem
-3. Fazer deploy (Vercel, Netlify, etc.)
+Este repositório inclui vercel.json e está apto para Deploy: 
+https://eclipse-reasds.vercel.app
 
 ## Contribuição
 
@@ -158,10 +121,6 @@ Dicas:
 - Garanta que os testes relevantes passem
 - Atualize a documentação quando necessário
 - Siga o padrão de codificação do projeto
-
-## Licença
-
-Não há um arquivo LICENSE no repositório atualmente. Se desejar publicar com uma licença, adicione um arquivo LICENSE (por exemplo MIT) e atualize este README.
 
 ## Autor / Contato
 
