@@ -105,7 +105,7 @@ Se for usar Supabase localmente/produzindo, crie as variáveis de ambiente adequ
 ## Deploy
 
 Este repositório inclui vercel.json e está apto para Deploy: 
-https://eclipse-reasds.vercel.app
+https://eclipse-reads.vercel.app/auth
 
 ## Contribuição
 
